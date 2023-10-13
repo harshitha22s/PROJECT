@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Submission</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Form Submission</h2>
+    <form action="Message2.html">
+
+        <label for="sal">Salutation</label>
+        <br><br>
+        <select name="sal" id="sal">
+            <option value="--None--">--None--</option>
+            <option value="Mr.">Mr.</option>
+            <option value="Ms.">Ms.</option>
+            <option value="Dr.">Dr.</option>
+        </select>
+        <br><br>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="contact">contact</label>
+      <input  type="text" requierd id="contact" name="contact" pattern="[6-9]{1}[0-9]{9}">
+      <br><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="add">Address</label>
+      <textarea name="add" id="add" cols="30" rows="10"></textarea>
+      
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
